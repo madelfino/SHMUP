@@ -10,12 +10,13 @@ public class Main : MonoBehaviour
 
     [Header("Set in Inspector")]
     public GameObject[] prefabEnemies;
+    public GameObject prefabDroneAlly;
     public float enemySpawnPerSecond = 2; // #Enemies / sec
     public float enemyDefaultPadding = 1.5f; // Padding for position
     public WeaponDefinition[] weaponDefinitions;
     public GameObject prefabPowerUp;
     public WeaponType[] powerUpFrequency = new WeaponType[] {
-        WeaponType.blaster, WeaponType.blaster, WeaponType.spread, WeaponType.shield
+        WeaponType.blaster, WeaponType.blaster, WeaponType.spread, WeaponType.shield, WeaponType.drone
     };
 
     private BoundsCheck bndCheck;
@@ -59,6 +60,10 @@ public class Main : MonoBehaviour
         go.transform.position = pos;
 
         Invoke("SpawnEnemy", 1f / enemySpawnPerSecond);
+    }
+
+    public void SpawnDroneAlly() {
+      Instantiate<GameObject>(prefabDroneAlly);
     }
 
     public void DelayedRestart( float delay ) {

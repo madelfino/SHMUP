@@ -76,7 +76,11 @@ public class Hero : MonoBehaviour
             case WeaponType.shield:
                 shieldLevel++;
                 break;
-            
+
+            case WeaponType.drone:
+                Main.S.SpawnDroneAlly();
+                break;
+
             default:
                 if (pu.type == weapons[0].type) {
                     Weapon w = GetEmptyWeaponSlot();

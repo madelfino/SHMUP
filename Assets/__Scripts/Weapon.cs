@@ -9,7 +9,8 @@ public enum WeaponType {
     phaser,     // [NI] Shots that move in waves
     missile,    // [NI] Homing missile
     laser,      // [NI] Damage over time
-    shield      // raise shield level
+    shield,     // raise shield level
+    drone       // spawn a drone ally to orbit the player
 }
 
 /// <summary>

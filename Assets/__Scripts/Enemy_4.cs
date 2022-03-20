@@ -116,7 +116,7 @@ public class Enemy_4 : Enemy
                     goHit = coll.contacts[0].otherCollider.gameObject;
                     partHit = FindPart(goHit);
                 }
-                Debug.Log(partHit.name + " hit!");
+                //Debug.Log(partHit.name + " hit!");
                 if (partHit.protectedBy != null) {
                     foreach (string s in partHit.protectedBy) {
                         if (!Destroyed(s)) {
@@ -143,6 +143,6 @@ public class Enemy_4 : Enemy
                 }
                 Destroy(other);
                 break;
-        }    
+        }
     }
 }

@@ -398,6 +398,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681297583}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &699956042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3102624397880228864, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_Name
+      value: DroneAlly
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102624397880228874, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +656,7 @@ MonoBehaviour:
   - {fileID: 8622934534816922552, guid: 92fffe3e25cc57a468d346f6887afa4e, type: 3}
   - {fileID: 8622934534816922552, guid: 92fffe3e25cc57a468d346f6887afa4e, type: 3}
   - {fileID: 7667374752836021331, guid: bdb694b932931e443b7ce36a39f01965, type: 3}
+  prefabDroneAlly: {fileID: 3102624397880228864, guid: bdfb34f696aa449d68bb240b300c48c8, type: 3}
   enemySpawnPerSecond: 0.5
   enemyDefaultPadding: 1.5
   weaponDefinitions:
@@ -629,8 +687,17 @@ MonoBehaviour:
     continuousDamage: 0
     delayBewteenShots: 0
     velocity: 0
+  - type: 7
+    letter: D
+    color: {r: 0.34798288, g: 0, b: 1, a: 1}
+    projectilePrefab: {fileID: 0}
+    projectileColor: {r: 1, g: 1, b: 1, a: 1}
+    damageOnHit: 0
+    continuousDamage: 0
+    delayBewteenShots: 0
+    velocity: 0
   prefabPowerUp: {fileID: 711749227149562066, guid: 52660b2ef569827408d454246bc2d493, type: 3}
-  powerUpFrequency: 01000000010000000200000006000000
+  powerUpFrequency: 0100000001000000020000000600000007000000
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
